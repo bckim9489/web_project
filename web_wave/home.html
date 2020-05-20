@@ -21,18 +21,53 @@
 
         <div class="mySlides fade">
 
-            <img src="./img/intro_img.jpg" >
+            <img src="./img/intro_img.jpg">
 
         </div>
 
         <div class="mySlides fade">
-            
-            <img src="./img/home_img.jpg" >
-            
+
+            <img src="./img/home_img.jpg">
+
         </div>
     </div>
-    <br>
-
+    
+    <div class="contents">
+        <section>
+            <h1>첫 섹션</h1>
+            <article>
+                아티클 1
+                설명설명설명
+            </article>
+        </section>
+        <section>
+            <h1>두번째 섹션</h1>
+            
+            <article>아티클</article>
+        </section>
+        <section>
+            <h1>세번째 섹션</h1>
+            <article>아티클</article>
+        </section>
+    </div>
+    <div class="contents">
+        <img src="./img/outro_img.jpg">
+        <secion>
+            <article>
+                두번째꺼
+            </article>
+        </secion>
+    </div>
+    <div class="contents">
+        <secion>
+            <article>
+                세번째꺼
+            </article>
+        </secion>
+    </div>
+    <footer>마무으리!
+        
+    </footer>
     <script>
         var slideIndex = 0;
         showSlides();
@@ -40,16 +75,16 @@
         function showSlides() {
             var i;
             var slides = document.getElementsByClassName("mySlides");
-            
+
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
             slideIndex++;
             if (slideIndex > slides.length) { slideIndex = 1 }
-            
+
             slides[slideIndex - 1].style.display = "block";
-            
-            setTimeout(showSlides, 3500); 
+
+            setTimeout(showSlides, 3500);
         }
     </script>
 </body>
